@@ -1,13 +1,56 @@
-<!doctype html>
-<html>
-    <meta charset="utf-8">
-    <head>
-        <title>Nox HTML/CSS Advanced</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <h1>Nox HTML/CSS Advanced</h1>
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="javascript/functions.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			CSS3 Animations och JavaScript
+		</title>
+		<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<!-- Knapp för att dölja / visa menyn -->
+		<button onclick="showHideMenu()">
+			Visa/Dölj Meny
+		</button>
+
+		<!-- Meny -->
+		<div id="meny" class="inaktiv">
+			<button onclick="sayHello()">
+				Hello!
+			</button>
+			<button onclick="pausePlay()">	
+				Pause/Play Animation
+			</button>
+			<button onclick="vadArKlockan()">
+				Visa klocka
+			</button>
+		</div>
+
+
+		<h1 class="headline">CSS Animationer</h1>
+
+		<!-- CSS animation med keyframes -->
+		<div id="squareContainer">
+			<div id="square"></div>
+		</div>
+
+		<h1 class="headline">Javascript</h1>
+		
+		<p id="hej">Här kommer vi att skriva hälsningar</p>
+		
+		<p id="klockan">Klockan kommer att visas här</p>
+		
+		<h2>Vad är 5 + 10?</h2>
+		<!-- input-taggen gör så att användaren kans kriva in ett svar -->
+		<input type="text" id="svar">
+		<button onclick="svara()">Svara!</button>
+		<div id="svarsFeedback"></div>
+
+	<!-- Vi lägger javascriptet sist i dokumentet så att det körs när hela sidan har laddats! -->
+	<script src="javascript.js"></script>
+	</body>
+
 </html>
